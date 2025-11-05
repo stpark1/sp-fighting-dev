@@ -29,14 +29,13 @@
   <header class="sticky top-0 z-50 border-b border-slate-200/60 dark:border-slate-800/60 bg-white/80 dark:bg-slate-900/75 backdrop-blur">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex items-center justify-between h-16">
-        <a href="#home" class="font-extrabold tracking-tight text-xl">Sean<span class="text-sky-500">.</span></a>
+        <a href="#home" class="font-bold tracking-tight text-xl">Sean Park</span></a>
         <nav class="hidden md:flex items-center gap-6 text-sm">
           <a href="#work" class="hover:text-sky-600">Work</a>
           <a href="#skills" class="hover:text-sky-600">Skills</a>
           <a href="#about" class="hover:text-sky-600">About</a>
           <a href="#contact" class="hover:text-sky-600">Contact</a>
           <a href="#resume" class="px-3 py-1.5 rounded-lg bg-sky-500 text-white hover:bg-sky-600">Resume</a>
-          <button id="themeBtn" aria-label="Toggle dark mode" class="rounded-lg border px-2.5 py-1.5 hover:bg-slate-50 dark:hover:bg-slate-800 border-slate-200 dark:border-slate-700">🌙</button>
         </nav>
         <button class="md:hidden p-2 rounded-lg border border-slate-200 dark:border-slate-700" id="menuBtn" aria-label="Open menu">☰</button>
       </div>
@@ -76,74 +75,47 @@
 
   <!-- Work / Projects -->
   <section id="work" class="py-16 sm:py-24">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="flex items-end justify-between gap-4">
-        <h2 class="text-2xl sm:text-3xl font-extrabold">Projects</h2>
-        <a href="#contact" class="text-sky-600 hover:underline">Let’s collaborate →</a>
-      </div>
-      <div class="mt-8 grid md:grid-cols-2 gap-6">
-        <!-- Project Card 1 -->
-        <article class="group rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden hover:shadow-soft transition-shadow bg-white dark:bg-slate-900">
-          <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1600&auto=format&fit=crop" alt="Audio UI"/>
-          <div class="p-5">
-            <div class="flex items-center gap-2 text-xs uppercase tracking-wider text-slate-500">
-              <span>UI Design</span><span>•</span><span>WPF/XAML</span>
-            </div>
-            <h3 class="mt-1 text-xl font-bold">OnAir Pro — Audio Workstation UI</h3>
-            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Overhauled the non-Pro UI into a cohesive, complete design system — designed in Figma and implemented in WPF/XAML with improved clarity and fully preserved functionality.</p>
-            <div class="mt-3 flex gap-3 text-sm">
-              <a href="#case-studies" class="text-sky-600 hover:underline">Read case study</a>
-              <a href="#" class="text-slate-500 hover:underline" aria-disabled="true">Repo (private)</a>
-            </div>
-          </div>
-        </article>
-        <!-- Project Card 2 -->
-        <article class="group rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden hover:shadow-soft transition-shadow bg-white dark:bg-slate-900">
-          <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1510906594845-bc082582c8cc?q=80&w=1600&auto=format&fit=crop" alt="Music discovery app"/>
-          <div class="p-5">
-            <div class="flex items-center gap-2 text-xs uppercase tracking-wider text-slate-500">
-              <span>Product</span><span>•</span><span>ML</span><span>•</span><span>Flask</span>
-            </div>
-            <h3 class="mt-1 text-xl font-bold">Music Discovery — Recommender</h3>
-            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">End‑to‑end web app turning Spotify inputs into curated playlists using K‑Means, KNN, and an autoencoder baseline. Designed custom UI using HTML/CSS and JavaScript.</p>
-            <div class="mt-3 flex gap-3 text-sm">
-              <a href="#case-studies" class="text-sky-600 hover:underline">Read case study</a>
-              <a href="#" class="text-sky-600 hover:underline">View repo</a>
-            </div>
-          </div>
-        </article>
+    <div class="max-w-6xl mx-auto px-4 space-y-16">
+      <h2 class="text-2xl sm:text-3xl font-extrabold">Projects</h2>
 
-        <!-- Project Card 3 -->
-        <article class="group rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden hover:shadow-soft transition-shadow bg-white dark:bg-slate-900">
-          <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1473091534298-04dcbce3278c?q=80&w=1600&auto=format&fit=crop" alt="Case study UI"/>
-          <div class="p-5">
-            <div class="flex items-center gap-2 text-xs uppercase tracking-wider text-slate-500">
-              <span>UX</span><span>•</span><span>Research</span>
-            </div>
-            <h3 class="mt-1 text-xl font-bold">Sea Of Beats — Game Artist</h3>
-            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Designed the Title Screen and other animated assets using piskel.</p>
-            <div class="mt-3 flex gap-3 text-sm">
-              <a href="#case-studies" class="text-sky-600 hover:underline">Read case study</a>
-              <a href="#" class="text-sky-600 hover:underline">View repo</a>
-            </div>
-          </div>
-        </article>
-        <!-- Project Card 4 -->
-        <article class="group rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden hover:shadow-soft transition-shadow bg-white dark:bg-slate-900">
-          <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1600&auto=format&fit=crop" alt="3D reconstruction"/>
-          <div class="p-5">
-            <div class="flex items-center gap-2 text-xs uppercase tracking-wider text-slate-500">
-              <span>Computer Vision</span><span>•</span><span>OpenCV</span>
-            </div>
-            <h3 class="mt-1 text-xl font-bold">Notebook Heroes - Game Artist</h3>
-            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Main background designer, designed level design and castle assets. .</p>
-            <div class="mt-3 flex gap-3 text-sm">
-              <a href="#case-studies" class="text-sky-600 hover:underline">Read case study</a>
-              <a href="#" class="text-sky-600 hover:underline">View repo</a>
-            </div>
-          </div>
-        </article>
+
+    <!-- Project 1 -->
+    <article class="flex flex-col md:flex-row gap-8 items-start">
+      <img class="h-50 w-full md:w-1/2 rounded-2xl object-cover object-top shadow-soft" src="assets/Fader-CensoredText.png" alt="OnAir UI Preview"/>
+      <div class="md:w-1/2 space-y-3">
+        <div class="text-xs uppercase tracking-wider text-slate-500 flex gap-2">
+          <span>UI Design</span><span>•</span><span>WPF/XAML</span>
+        </div>
+        <h3 class="text-xl font-bold">OnAir Pro — Audio Workstation UI</h3>
+        <p class="text-sm text-slate-600 dark:text-slate-300">Overhauled the non-Pro UI into a cohesive, complete design system — designed in Figma and implemented in WPF/XAML with improved clarity and fully preserved functionality.</p>
       </div>
+    </article>
+
+    <!-- Project 3 -->
+    <article class="flex flex-col md:flex-row gap-8 items-start">
+      <img class="h-40 w-full md:w-1/2 rounded-2xl object-cover object-[center_30%] scale-104 shadow-soft" src="assets/Sea-of-Beats-page.png" alt="3D Scan Preview"/>
+      <div class="md:w-1/2 space-y-3">
+        <div class="text-xs uppercase tracking-wider text-slate-500 flex gap-2">
+          <span>Computer Vision</span><span>•</span><span>OpenCV</span>
+        </div>
+        <h3 class="text-xl font-bold">Sea of Beats - Game Artist</h3>
+        <p class="text-sm text-slate-600 dark:text-slate-300">Designed the Title Screen and other animated assets using piskel.</p>
+      </div>
+    </article>
+
+    <!-- Project 4 -->
+    <article class="flex flex-col md:flex-row gap-8 items-start">
+      <img class="h-50 w-full md:w-1/2 rounded-2xl object-cover object-top shadow-soft" src="assets/Notebook_heros_foregroundeffect.png" alt="Skybound Harbor Preview"/>
+      <div class="md:w-1/2 space-y-3">
+        <div class="text-xs uppercase tracking-wider text-slate-500 flex gap-2">
+          <span>UX</span><span>•</span><span>Prototyping</span>
+        </div>
+        <h3 class="text-xl font-bold">Notebook Heroes - Game Artist</h3>
+        <p class="text-sm text-slate-600 dark:text-slate-300">Main background designer, designed level design and castle assets.</p>
+      </div>
+    </article>
+
+
     </div>
   </section>
 
@@ -163,7 +135,7 @@
           <div class="text-sm">Figma</div>
         </div>
         <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-4 bg-white dark:bg-slate-900 flex flex-col items-center gap-3">
-          <img src="https://cdn.simpleicons.org/microsoft" alt="WPF/XAML" class="h-10 w-10" />
+          <div class="h-10 w-10 flex items-center justify-center text-slate-700 dark:text-slate-300 font-display text-base">XAML</div>
           <div class="text-sm">WPF / XAML</div>
         </div>
         <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-4 bg-white dark:bg-slate-900 flex flex-col items-center gap-3">
@@ -180,11 +152,12 @@
         </div>
         <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-4 bg-white dark:bg-slate-900 flex flex-col items-center gap-3">
           <img src="https://cdn.simpleicons.org/html5" alt="HTML5" class="h-10 w-10" />
-          <div class="text-sm">HTML5</div>
+          <div class="text-sm">HTML</div>
         </div>
         <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-4 bg-white dark:bg-slate-900 flex flex-col items-center gap-3">
-          <img src="https://cdn.simpleicons.org/css3" alt="CSS3" class="h-10 w-10" />
-          <div class="text-sm">CSS3</div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+          alt="CSS3" class="h-10 w-10" />
+          <div class="text-sm">CSS</div>
         </div>
         <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-4 bg-white dark:bg-slate-900 flex flex-col items-center gap-3">
           <img src="https://cdn.simpleicons.org/javascript" alt="JavaScript" class="h-10 w-10" />
@@ -229,16 +202,6 @@
       <div class="md:col-span-2">
         <h2 class="text-2xl sm:text-3xl font-extrabold">About</h2>
         <p class="mt-3 text-slate-600 dark:text-slate-300 max-w-prose">I’m a Computer Science graduate from UC Irvine focusing on UI/UX. I enjoy crafting component libraries, building design systems, and validating ideas with users. My background in ML and CV helps me bridge design and engineering.</p>
-        <div class="mt-6 grid sm:grid-cols-2 gap-4">
-          <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 bg-white dark:bg-slate-900">
-            <div class="font-semibold">Skills</div>
-            <p class="text-sm mt-1 text-slate-600 dark:text-slate-300">Figma, Prototyping, Usability Testing, Information Architecture, WPF/XAML, React, HTML/CSS, Python</p>
-          </div>
-          <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 bg-white dark:bg-slate-900">
-            <div class="font-semibold">What I’m exploring</div>
-            <p class="text-sm mt-1 text-slate-600 dark:text-slate-300">Motion design in product UIs, component tokens, and accessible skeuomorphism.</p>
-          </div>
-        </div>
       </div>
       <aside class="md:col-span-1">
         <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 sticky top-24 bg-white dark:bg-slate-900">
