@@ -52,25 +52,38 @@
     </div>
   </header>
   <!-- Hero -->
-  <section id="home" class="relative overflow-hidden min-h-[75vh] sm:min-h-[85vh] flex items-center">
-    <div class="absolute inset-0 -z-10">
-      <div class="h-full bg-gradient-to-b from-sky-50 via-white to-transparent dark:from-sky-900/25 dark:via-slate-900"></div>
+  <section id="home" class="relative overflow-hidden min-h-[75vh] sm:min-h-[85vh] flex items-center justify-center">
+    <!-- Background video -->
+    <div class="absolute inset-0 -z-20">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="h-full w-full object-cover"
+      >
+        <source src="assets/Studio_Ghibli_Nature_Loop_Trim.mp4" type="video/mp4" />
+      </video>
     </div>
-  
-  
+
+    <!-- Overlay for readability -->
+    <div class="absolute inset-0 -z-10 bg-black/35"></div>
+
+    <!-- Optional soft gradient overlay -->
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-black/20 via-black/25 to-black/40"></div>
+
     <div class="max-w-6xl mx-auto px-4 w-full">
       <div class="text-center">
         <h1 class="font-display font-semibold uppercase tracking-[0.03em] leading-[0.9]
-                  text-5xl sm:text-7xl lg:text-8xl xl:text-[10rem] text-slate-900 dark:text-white">
-          <span class="block bg-clip-text text-transparent 
-                       bg-gradient-to-br from-slate-900 via-slate-700 to-slate-500
-                       dark:from-white dark:via-slate-300 dark:to-slate-500">
-            Sean  Park
+                  text-5xl sm:text-7xl lg:text-8xl xl:text-[10rem] text-white">
+          <span class="block">
+            Sean Park
           </span>
         </h1>
-      <p class="mt-6 text-xs sm:text-sm md:text-base uppercase tracking-[0.35em] text-slate-500 dark:text-slate-400">
-        — UI/UX-ORIENTED SOFTWARE ENGINEER —
-      </p>
+
+        <p class="mt-6 text-xs sm:text-sm md:text-base uppercase tracking-[0.35em] text-white/75">
+          — UI/UX-ORIENTED SOFTWARE ENGINEER —
+        </p>
       </div>
     </div>
   </section>
